@@ -10,11 +10,42 @@
   --secondary-background-color: #f7f7f7;
 }
 
+/* CSS Reset */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+/* End of CSS Reset */
+
 body {
   font-family: Open Sans, sans-serif;
 }
 
 /* General Styles */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border: 2px solid red;
+
+}
 
 /* to remove the bullet points in list */
 .list {
