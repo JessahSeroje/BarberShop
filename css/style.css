@@ -47,6 +47,20 @@ body {
 
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
+
 /* to remove the bullet points in list */
 .list {
   list-style: none;
@@ -59,6 +73,7 @@ body {
 
 /* to  */
 .top-text {
+  margin-bottom: 20px;
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
@@ -68,6 +83,7 @@ body {
 }
 
 .bottom-text {
+  margin-bottom: 20px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -75,6 +91,8 @@ body {
   letter-spacing: 0.36px;
 }
 .section-title {
+  margin-bottom: 20px;
+  
   font-family: Raleway; sans-serif;
   font-size: 42px;
   font-style: normal;
@@ -85,13 +103,18 @@ body {
 
 /* 1. button - doesn't automatically inherit font-family */
 .button {
-  font-family: inherit;
+  border: 2px solid var(--primary-orange-color);
+  border-radius: 25px;
+  padding: 5px 10px;
+
+  font-family: inherit 25px;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 /* End of General Styles */
 
