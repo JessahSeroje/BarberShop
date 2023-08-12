@@ -509,6 +509,32 @@ letter-spacing: 0.28px;
 transform: translateY(0);
 }
 
+/* ICONS */
+/* socialmedia */
+.socmed {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socmed .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  /* to center in a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary-white-color);
+  background-color: var(--primary-white-color);
+}
+.socmed .icon .link:hover {
+  fill: var(--primary-orange-color);
+}
+
 /* Portfolio Section */
 .portfolio {
   background-color: var(--primary-white-color);
@@ -565,7 +591,9 @@ letter-spacing: 2.1px;
 /* ---Contacts Section-- */
 .contacts {
   /* background: var(--primary-black-color); */
+  background-image: url(../images/contacts-bg.png);
   width: calc(50% - 15px);
+   padding-left: 100px;
 }
 
 .contacts-title {
@@ -587,6 +615,8 @@ font-style: normal;
 font-weight: 400;
 line-height: 30px;
 letter-spacing: 0.36px;
+
+
 }
 .contacts-top-text {
   color: var(--primary-white-color);
