@@ -11,6 +11,15 @@
       rel="stylesheet"
     />
 
+    <!-- AOS LIBRARY -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- ANIMATE.CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -52,7 +61,7 @@
             >+38 044 111 11 11</a
           >
         </address>
-        <button class="header-button button" type="button">
+        <button class="header-button button" type="button" data-modal-open>
           Book a Service
         </button>
       </div>
@@ -85,7 +94,7 @@
           </ul>
           <div class="hero-wrap">
           <p class="hero-top-text top-text">A HAIR SALON FOR MEN IN KYIV</p>
-          <h1 class="hero-title">BarberShop</h1>
+          <h1 class="hero-title animate__animated animate__heartBeat">BarberShop</h1>
           <p class="hero-bottom-text bottom-text">
             We are experts in trendy men's haircuts.<br />
             We work quickly, carefully, and tastefully.
@@ -116,7 +125,7 @@
         </ul>
         <div class="about-wrap">
         <p class="about-top-text top-text">about</p>
-        <h2 class="about-title section-title">
+        <h2 class="about-title section-title" data-aos="fade-up">
           The Best Barbershop in Your City
         </h2>
         <p class="about-bottom-text bottom-text">
@@ -143,7 +152,7 @@
         <p class="prices-top-text top-text">
           Spend time in the company of the best craftsmen
         </p>
-        <h2 class="prices-title section-title">Services and Prices</h2>
+        <h2 class="prices-title section-title" data-aos="zoom-in">Services and Prices</h2>
         <div class="prices-wrap">
         <ul class="prices-list list">
           <li class="prices-item">
@@ -212,7 +221,7 @@
         </ul>
         <div class="benefits-wrap">
         <p class="benefits-top-text top-text">Old School</p>
-        <h2 class="benefits-title section-title">Why do they come to us?</h2>
+        <h2 class="benefits-title section-title" data-aos="flip-up">Why do they come to us?</h2>
         <p class="benefits-bottom-text bottom-text">
           Only good things are said about us. But it is better<br />
           to see and feel 1 time than to read 10 times.
@@ -226,11 +235,13 @@
         <p class="barbers-top-text top-text">
           for true connoisseurs of the atmospere
         </p>
-        <h2 class="barbers-title section-title">Our Barbers</h2>
+        <h2 class="barbers-title section-title" data-aos="zoom-out-up">Our Barbers</h2>
         <ul class="barbers-list list">
           <li class="barbers-item">
             <div class="barbers-cover-wrap">
-            <img src="./images/barber-img-1.jpg" alt="barber img 1" />
+            <img src="./images/barber-img-1.jpg" alt="barber img 1"
+            width="370"
+            height="346" />
             <p class="barbers-cover-text">Learn from the man who spends much of his life speaking
                To the back of your head knowing what it means to follow
 The razors edge along a worn strop or random thoughts
@@ -287,12 +298,16 @@ quot homines.
                       <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a></li>
+                  
               </ul>
             </div>
           </li>
+          
           <li class="barbers-item">
             <div class="barbers-cover-wrap">
-            <img src="./images/barber-img-2.jpg" alt="barber img 1" />
+            <img src="./images/barber-img-2.jpg" alt="barber img 2"
+            width="370"
+            height="346" />
             <p class="barbers-cover-text">Learn from the man who spends much of his life speaking
                To the back of your head knowing what it means to follow
 The razors edge along a worn strop or random thoughts
@@ -353,7 +368,9 @@ quot homines.</p>
           </li>
           <li class="barbers-item">
             <div class="barbers-cover-wrap">
-            <img src="./images/barber-img-3.jpg" alt="barber img 1" />
+            <img src="./images/barber-img-3.jpg" alt="barber img 3"
+            width="370"
+            height="346" />
             <p class="barbers-cover-text">Learn from the man who spends much of his life speaking
                To the back of your head knowing what it means to follow
 The razors edge along a worn strop or random thoughts
@@ -459,7 +476,9 @@ quot homines.</p>
                 href="https://goo.gl/maps/8qNoCvx5U3srCBWVA"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Main Street,7A Kyiv, 08132</a
+                ><svg class="icons" width="24" height="24">
+                      <use href="./images/icons.svg#pintag"></use>
+                    </svg>Main Street, 7A Kyiv, 08132</a
               >
             </li>
             <li class="contacts-item">
@@ -468,7 +487,9 @@ quot homines.</p>
                 href="tel:+380441111111"
                 target="_blank"
                 rel="noopener noreferrer"
-                >+38 044 111 11 11</a
+                ><svg class="icons" width="24" height="24">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>+38 044 111 11 11</a
               >
             </li>
             <li class="contacts-item">
@@ -477,7 +498,9 @@ quot homines.</p>
                 href="mailto:barbershop@email.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                >barbershop@email.com</a
+                ><svg class="icons" width="24" height="24">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>barbershop@email.com</a
               >
             </li>
           </ul>
@@ -517,15 +540,26 @@ quot homines.</p>
       </ul>
       </div>
     </footer>
+
     <!--  MODAL -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close"
-        type="button"></button>
+        type="button" data-modal-close><svg class="modal-close-icon" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg></button>
       </div>
     </div>
 
-    <!--  ADS SCRIPT -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!--  AOS SCRIPT -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- INITIALIZE AOS -->
+    <script>
+  AOS.init();
+</script>
+
+<!-- MODAL SCRIPT -->
+ <script src="./js/modal.js"></script>
+
   </body>
 </html>

@@ -36,3 +36,8 @@
     <path stroke="#9DA4BD" stroke-linecap="round" stroke-linejoin="round" d="M4.8 5h14.4c.99 0 1.8.79 1.8 1.75v10.5c0 .96-.81 1.75-1.8 1.75H4.8c-.99 0-1.8-.79-1.8-1.75V6.75C3 5.79 3.81 5 4.8 5Z" clip-rule="evenodd"/>
   <path stroke="#9DA4BD" stroke-linecap="round" stroke-linejoin="round" d="m20 7-8 6-8-6"/>
     </symbol>
+
+    <!-- Modal Close Icon -->
+    <symbol id="icon-close" viewBox="0 0 8 8">
+    <path fill="#2E2F42" d="M8 .8 7.2 0 4 3.2.8 0 0 .8 3.2 4 0 7.2l.8.8L4 4.8 7.2 8l.8-.8L4.8 4 8 .8Z"/>
+    </symbol>
